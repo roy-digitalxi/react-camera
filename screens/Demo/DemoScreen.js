@@ -17,6 +17,10 @@ import { Icon } from 'native-base';
 
 class DemoScreen extends Component{
 
+    static navigationOptions = {
+        header: null
+    }
+
     handleBtnPress = () => {
         this.props.test("my new message")
     }
