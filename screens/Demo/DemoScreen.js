@@ -22,8 +22,9 @@ class DemoScreen extends Component{
     }
 
     handleBtnPress = () => {
-        
+
         this.props.test("my new message");
+        
     }
 
     render(){
