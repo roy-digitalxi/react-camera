@@ -14,7 +14,10 @@ import store from './store';
 import { StackNavigator } from 'react-navigation';
 
 // screen
-import { DemoScreen } from './screens';
+import { 
+  DemoScreen,
+  DashboardScreen,
+} from './screens';
 
 export default class App extends Component {
 
@@ -23,9 +26,11 @@ export default class App extends Component {
     const MainNavigator = StackNavigator({
       
       Demo: {screen: DemoScreen}, 
+      Dashboard: {screen: DashboardScreen},
 
     }, {
-      model: 'modal'
+      model: 'modal',
+      initialRouteName : 'Dashboard'
     });
 
     return (
