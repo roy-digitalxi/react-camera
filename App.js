@@ -30,7 +30,7 @@ export default class App extends Component {
 
     }, {
       model: 'modal',
-      initialRouteName : 'Dashboard'
+      initialRouteName : 'Demo'
     });
 
     return (
